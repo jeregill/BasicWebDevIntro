@@ -2,9 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Home</title>
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
+<nav class="top-nav">
+    <ul>
+        <li>
+            <a href="index.html"><i class="material-icons">home</i></a>
+        </li>
+        <li>
+            <a href="about.html"><i class="material-icons">info</i></a>
+        </li>
+    </ul>
+</nav>
+<h1>Message List</h1>
+<div id="main-content">
+    <div>
+        <form id="input-form">
+            <table id="create-message-table">
+                <tr>
+                    <td>Message:</td>
+                <td>
+                    <input name ="message" id="message-input" type="text" placeholder="Type your message here">
+                </td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td>
+                        <input name="submittedBy" id="name-input" type="text" placeholder="Type your name here">
+                    </td>
+                </tr>
+            </table>
+            <div id="form-buttons" class="side-by-side-buttons">
+                <button type="button" id="submit-button" onclick="submitMessage()" disabled> Submit Message</button>
+                <button type="button" id="clear-button"  onclick="clearInput()" disabled> Clear Message </button>
+            </div>
+        </form>
 
+    </div>
+    <h3>Posted Messages</h3>
+    <div id="messages-div">
+        <table id="messages-table">
+            <thead>
+            <tr class="header">
+                <th>Message</th>
+                <th>Submitted By:</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody id="messages-body">
+            </tbody>
+        </table>
+    </div>
+    <div id="table-buttons" class="side-by-side-buttons">
+        <button type="button" id="show-messages-button" onclick="showMessages()"> Show Messages</button>
+        <button type="button" id="hide-messages-button" onclick="hideMessages()"> Hide Messages </button>
+        <button type="button" id="clear-messages-button" onclick="clearMessages()"> Clear Messages </button>
+    </div>
+</div>
 </body>
 </html>

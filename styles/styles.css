@@ -1,0 +1,117 @@
+/* Nav bar */
+
+body{
+  background-color: ghostwhite;
+  font-family: Roboto, sans-serif;
+}
+
+.material-icons {
+  color: darkred;
+}
+
+.top-nav{
+  width: 98vw;
+  background-color: antiquewhite;
+  border: 5px solid red;
+  border-radius: 1vh;
+}
+
+.top-nav li {
+    list-style: none;
+    margin-right: 2vw;
+}
+
+.top-nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  height: 4vh;
+  align-items: center;
+}
+
+.top-nav a {
+  text-decoration: none;
+  padding: 1vh;
+}
+
+.top-nav i:hover {
+  background-color: indianred;
+}
+
+/* Text Input */
+#input-form input {
+  width: 50vw;
+  box-sizing: border-box;
+  padding: 2px 2px;
+  border: 4px solid red;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+button {
+  background-color: maroon;
+  border: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1.5vh 1.5vw;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: indianred;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: auto;
+}
+
+.side-by-side-buttons{
+  margin: 0.5vh 1vh;
+}
+
+#create-message-table {
+  border-collapse: separate;
+  border-spacing: 2vh;
+}
+
+#messages-table {
+  border-collapse: collapse;
+  background: transparent;
+  border-radius: 5px;
+  width: 97vw;
+  margin: 2vh 1vw;
+}
+
+#messages-table tr {
+  border: darkred solid 3px;
+}
+
+#messages-table tr.header {
+  border: none
+}
+
+#messages-table tr:hover {
+  background-color: lightcoral;
+}
+
+#messages-table td,th {
+  text-align: left;
+  padding: 4px 4px;
+}
+
+#messages-table tr th:last-child {
+  width: 3vw;
+}
+
+#messages-table tr th:nth-child(2) {
+  width: 20vw;
+}
+
+.material-icons:hover {
+  cursor: pointer;
+  color: black;
+}
