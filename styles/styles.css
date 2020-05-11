@@ -11,7 +11,7 @@ body, html{
 }
 
 .top-nav{
-  width: 98vw;
+  width: 100%;
   background-color: antiquewhite;
   border: 5px solid red;
   border-radius: 3px;
@@ -48,7 +48,7 @@ body, html{
 
 /* Text Input */
 #input-form input {
-  width: 50vw;
+  width: 50%;
   box-sizing: border-box;
   padding: 2vh 2vw;
   color: black;
@@ -97,7 +97,7 @@ button:disabled {
   border: none;
   background: transparent;
   border-radius: 5px;
-  width: 97vw;
+  width: 100%;
   margin: 2vh 1vw;
   font-size: 1rem;
 }
@@ -145,10 +145,58 @@ button:disabled {
 
 }
 
+#about-content {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  justify-content: center;
+  padding: 4vh 10vw;
+}
+
+#about-me, #about-cpsc {
+  display: flex;
+}
+
+
+.text {
+  margin: 1vh 2vw;
+}
+
+#image {
+  margin: auto auto;
+}
+
+img {
+  width: 50vw;
+  display: flex;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+
 @media only screen
-and (min-device-width: 320px)
+and (min-device-width: 100px)
 and (max-device-width: 480px) {
   html, body {
     font-size: 9px !important;
   }
+
+  #input-form input {
+    width: 90%;
+  }
+  #about-content {
+    padding: 1vh 1.5vw;
+  }
+  blockquote {
+    margin: 1em 2em;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+
+  #about-me {
+    flex-direction: column;
+  }
+
+
 }
