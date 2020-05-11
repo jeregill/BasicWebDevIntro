@@ -1,0 +1,202 @@
+/* Nav bar */
+
+body, html{
+  background-color: ghostwhite;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+.material-icons {
+  color: darkred;
+}
+
+.top-nav{
+  width: 100%;
+  background-color: antiquewhite;
+  border: 5px solid red;
+  border-radius: 3px;
+}
+
+.top-nav li {
+    list-style: none;
+    margin-right: 2vw;
+}
+
+.top-nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  height: 4vh;
+  align-items: center;
+}
+
+.top-nav a {
+  text-decoration: none;
+  padding: 1vh;
+}
+
+.top-nav li:last-child {
+  position: absolute;
+  right: 1vw;
+  margin-right: 0;
+}
+
+.top-nav i:hover {
+  background-color: indianred;
+}
+
+/* Text Input */
+#input-form input {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 2vh 2vw;
+  color: black;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  margin: 1vh 1vw;
+  display: block;
+  font-size: 1rem;
+}
+
+#input-form label {
+  margin: 1vh 1vw;
+  display: block;
+  font-size: 1rem;
+}
+
+
+button {
+  background-color: red;
+  border: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1.5vh 1.5vw;
+  border-radius: 3px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: indianred;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: auto;
+}
+
+.side-by-side-buttons{
+  margin: 0.5vh 1vh;
+}
+
+
+#messages-table {
+  border: none;
+  background: transparent;
+  border-radius: 5px;
+  width: 100%;
+  margin: 2vh 1vw;
+  font-size: 1rem;
+}
+
+#messages-table tbody tr {
+  box-shadow:  1px 1px indianred,
+  1px 1px indianred,
+  2px 2px indianred;
+}
+
+#messages-table tr.header {
+  border: none
+}
+
+#messages-table tbody tr:hover {
+  background-color: mistyrose;
+}
+
+#messages-table tbody {
+  border-collapse: collapse;
+  border-style: ridge;
+}
+
+#messages-table td,th {
+  text-align: left;
+  padding: 4px 4px;
+}
+
+
+#messages-table tr th:last-child {
+  width: 3vw;
+}
+
+#messages-table tr th:nth-child(2) {
+  width: 20vw;
+}
+
+.material-icons {
+  font-size: 1.5rem;
+ }
+
+.material-icons:hover {
+  cursor: pointer;
+  color: black;
+
+}
+
+#about-content {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  justify-content: center;
+  padding: 4vh 10vw;
+}
+
+#about-me, #about-cpsc {
+  display: flex;
+}
+
+
+.text {
+  margin: 1vh 2vw;
+}
+
+#image {
+  margin: auto auto;
+}
+
+img {
+  width: 50vw;
+  display: flex;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+
+@media only screen
+and (min-device-width: 100px)
+and (max-device-width: 480px) {
+  html, body {
+    font-size: 9px !important;
+  }
+
+  #input-form input {
+    width: 90%;
+  }
+  #about-content {
+    padding: 1vh 1.5vw;
+  }
+  blockquote {
+    margin: 1em 2em;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+
+  #about-me {
+    flex-direction: column;
+  }
+
+
+}
