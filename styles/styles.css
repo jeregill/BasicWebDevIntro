@@ -1,8 +1,9 @@
 /* Nav bar */
 
-body{
+body, html{
   background-color: ghostwhite;
   font-family: Roboto, sans-serif;
+  font-size: 16px;
 }
 
 .material-icons {
@@ -56,11 +57,13 @@ body{
   border: none;
   margin: 1vh 1vw;
   display: block;
+  font-size: 1rem;
 }
 
 #input-form label {
   margin: 1vh 1vw;
   display: block;
+  font-size: 1rem;
 }
 
 
@@ -73,6 +76,7 @@ button {
   padding: 1.5vh 1.5vw;
   border-radius: 3px;
   box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+  font-size: 1rem;
 }
 
 button:hover {
@@ -95,12 +99,13 @@ button:disabled {
   border-radius: 5px;
   width: 97vw;
   margin: 2vh 1vw;
+  font-size: 1rem;
 }
 
 #messages-table tbody tr {
-  box-shadow:  -1px 1px indianred,
-  -1px 1px indianred,
-  -2px 2px indianred;
+  box-shadow:  1px 1px indianred,
+  1px 1px indianred,
+  2px 2px indianred;
 }
 
 #messages-table tr.header {
@@ -121,6 +126,7 @@ button:disabled {
   padding: 4px 4px;
 }
 
+
 #messages-table tr th:last-child {
   width: 3vw;
 }
@@ -129,16 +135,20 @@ button:disabled {
   width: 20vw;
 }
 
+.material-icons {
+  font-size: 1.5rem;
+ }
+
 .material-icons:hover {
   cursor: pointer;
   color: black;
+
 }
 
 @media only screen
 and (min-device-width: 320px)
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2) {
-
-
-
+and (max-device-width: 480px) {
+  html, body {
+    font-size: 9px !important;
+  }
 }
