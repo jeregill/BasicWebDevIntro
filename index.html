@@ -5,37 +5,24 @@
     <title>Home</title>
     <link type="text/css" rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
 </head>
 <body>
 <nav class="top-nav">
-    <ul>
-        <li>
-            <a href="index.html"><i class="material-icons">home</i></a>
-        </li>
-        <li>
-            <a href="about.html"><i class="material-icons">info</i></a>
-        </li>
-    </ul>
 </nav>
 <h1>Message List</h1>
 <div id="main-content">
     <div>
         <form id="input-form">
-            <table id="create-message-table">
-                <tr>
-                    <td>Message:</td>
-                <td>
+            <div id="message-input-container">
+                    <label for="message-input"> What's on your mind?</label>
                     <input name ="message" id="message-input" type="text" placeholder="Type your message here">
-                </td>
-                </tr>
-                <tr>
-                    <td>Name:</td>
-                    <td>
-                        <input name="submittedBy" id="name-input" type="text" placeholder="Type your name here">
-                    </td>
-                </tr>
-            </table>
+            </div>
+            <div id="name-input-container">
+                <label for="name-input">Name:</label>
+            <input name="submittedBy" id="name-input" type="text" placeholder="Type your name here">
+            </div>
             <div id="form-buttons" class="side-by-side-buttons">
                 <button type="button" id="submit-button" onclick="submitMessage()" disabled> Submit Message</button>
                 <button type="button" id="clear-button"  onclick="clearInput()" disabled> Clear Message </button>
