@@ -1,2 +1,2 @@
-# CPSC436I-Assignment1
-Assignment 1 for CPSC 436I
+# Web Dev Introduction
+Basic introductory project to web development. built with vanilla HTML, CSS, JS
